@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2D3748;      /* MODIFIÉ: Notre gris foncé pour le texte */
+  --primary: #2F855A;         /* AJOUTÉ: Notre Vert Nature */
+  --accent: #38A169;          /* AJOUTÉ: Notre Vert Vif */
+}
+
+/* La directive @theme n'est pas standard, elle a été retirée. 
+   Les variables dans :root remplissent ce rôle. */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #48BB78;          /* AJOUTÉ: Vert plus clair pour le mode sombre */
+    --accent: #68D391;           /* AJOUTÉ: Vert encore plus clair pour l'accent */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif; /* Note: Cette ligne surcharge la police optimisée par Next.js */
+}
