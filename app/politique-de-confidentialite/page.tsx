@@ -28,7 +28,7 @@ export default function PolitiqueDeConfidentialitePage() {
 
                 <article>
                     <h3>ARTICLE 2 : PRINCIPES GÉNÉRAUX EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DE DONNÉES</h3>
-                    <p>Conformément aux dispositions de l’article 5 du Règlement européen 2016/679 (RGPD), la collecte et le traitement des données des utilisateurs du site respectent les principes suivants :</p>
+                    <p>Conformément aux dispositions de l'article 5 du Règlement européen 2016/679 (RGPD), la collecte et le traitement des données des utilisateurs du site respectent les principes suivants :</p>
                     <ul>
                         <li><strong>Licéité, loyauté et transparence :</strong> Les données ne peuvent être collectées et traitées qu'avec le consentement de l'utilisateur propriétaire des données.</li>
                         <li><strong>Finalités limitées :</strong> La collecte et le traitement des données sont exécutés pour répondre à un ou plusieurs objectifs déterminés dans les présentes conditions générales d'utilisation.</li>
@@ -39,7 +39,7 @@ export default function PolitiqueDeConfidentialitePage() {
 
                 <article>
                     <h3>ARTICLE 3 : DONNÉES À CARACTÈRE PERSONNEL COLLECTÉES ET TRAITÉES DANS LE CADRE DE LA NAVIGATION SUR LE SITE</h3>
-                    <p>Les données à caractère personnel collectées sur le site de [Nom du client ou du site] sont les suivantes :</p>
+                    <p>Les données à caractère personnel collectées sur le site de Fabrice LEMAITRE sont les suivantes :</p>
                     <ul>
                         <li><strong>Via le formulaire de contact :</strong> Nom, prénom, adresse email, numéro de téléphone, et le contenu du message.</li>
                         <li><strong>Via le formulaire de témoignage :</strong> Nom et le contenu du témoignage.</li>
@@ -49,12 +49,12 @@ export default function PolitiqueDeConfidentialitePage() {
                         <li>L'utilisateur remplit et envoie le formulaire de contact.</li>
                         <li>L'utilisateur remplit et envoie le formulaire de soumission de témoignage.</li>
                     </ul>
-                    <p>Le responsable du traitement conservera l’ensemble des données collectées pour une durée strictement nécessaire à la finalité de la prise de contact ou de la gestion du témoignage, et dans le respect de la réglementation en vigueur.</p>
+                    <p>Le responsable du traitement conservera l'ensemble des données collectées pour une durée strictement nécessaire à la finalité de la prise de contact ou de la gestion du témoignage, et dans le respect de la réglementation en vigueur.</p>
                 </article>
 
                 <article>
                     <h3>ARTICLE 4 : RESPONSABLE DU TRAITEMENT DES DONNÉES</h3>
-                    <p>Le responsable du traitement des données à caractère personnel est : <strong>[Nom et Prénom du client]</strong>. Il peut être contacté par email à l'adresse suivante : <strong>[Email du client]</strong>.</p>
+                    <p>Le responsable du traitement des données à caractère personnel est : <strong>Fabrice LEMAITRE</strong>. Il peut être contacté par email à l'adresse suivante : <strong>[Email du client]</strong>.</p>
                     <p>Le responsable du traitement des données est chargé de déterminer les finalités et les moyens mis au service du traitement des données à caractère personnel.</p>
                 </article>
 

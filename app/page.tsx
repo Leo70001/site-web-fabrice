@@ -27,9 +27,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">Qui suis-je ?</h2>
           <p className="text-center text-lg">
-            "Magnétiseur guérisseur, coupeur de feu à Combles (Somme) [...] j' exerce uniquement au cabinet." "J'ai pris connaissance de ce don depuis 1998 et je le met en pratique depuis 2014."
+            "Magnétiseur guérisseur, coupeur de feu à Combles (Somme)  j' exerce uniquement au cabinet." "J'ai pris connaissance de ce don depuis 1998 et je le met en pratique depuis 2014."
           </p>
-           <p className="text-center mt-4 italic text-gray-600">
+          <p className="text-center mt-4 italic text-gray-600">
             "Ceux qui ont la chance de me connaitre disent que c'est la maison du bonheur."
           </p>
           <div className="text-center mt-8">
@@ -40,25 +40,25 @@ export default function Home() {
         </div>
       </section>
       <section className="py-20">
-         <h2 className="text-3xl font-bold text-center mb-12">Domaines d'interventions</h2>
-         <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">Brûlures & Zonas</h3>
-              <p>Le magnétisme est aussi utilisé pour couper le feu des brulûres domestiques, des zonas et soulage des effets secondaires de la radiathéraphie et chimiothérapie.</p>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">Douleurs & Pathologies</h3>
-              <p>Il permet de traiter [...] les douleurs neuropathiques [...] le psoriasis, les céphalées, l'insomnie etc…..</p>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">États Émotionnels</h3>
-              <p>Libération des blocages énergétiques pour traiter le stress, l'anxiété et la déprime.</p>
-            </div>
-         </div>
-         <div className="mt-12 text-center bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 max-w-3xl mx-auto rounded-md">
-            <p className="font-bold">Important :</p>
-            <p>Le magnétisme vient en complément de la médecine traditionnelle. En aucun cas, je diagnostique ou remplace un traitement.</p>
-         </div>
+        <h2 className="text-3xl font-bold text-center mb-12">Domaines d'interventions</h2>
+        <div className="grid md:grid-cols-3 gap-8 text-center">
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">Brûlures & Zonas</h3>
+            <p>Le magnétisme est aussi utilisé pour couper le feu des brulûres domestiques, des zonas et soulage des effets secondaires de la radiathéraphie et chimiothérapie.</p>
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">Douleurs & Pathologies</h3>
+            <p>Il permet de traiter les douleurs neuropathiques le psoriasis, les céphalées, l'insomnie etc…..</p>
+          </div>
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-2 text-[var(--primary)]">États Émotionnels</h3>
+            <p>Libération des blocages énergétiques pour traiter le stress, l'anxiété et la déprime.</p>
+          </div>
+        </div>
+        <div className="mt-12 text-center bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 max-w-3xl mx-auto rounded-md">
+          <p className="font-bold">Important :</p>
+          <p>Le magnétisme vient en complément de la médecine traditionnelle. En aucun cas, je diagnostique ou remplace un traitement.</p>
+        </div>
       </section>
     </div>
   );

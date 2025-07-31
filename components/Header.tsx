@@ -1,19 +1,21 @@
 // src/components/Header.tsx
 'use client';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+// MODIFICATION : On réorganise les liens pour un parcours plus logique
 const navLinks = [
   { name: 'Accueil', href: '/' },
   { name: 'Me Connaître', href: '/me-connaitre' },
+  { name: 'Le Magnétisme', href: '/le-magnetisme' },
   { name: 'Interventions', href: '/interventions' },
   { name: 'La Séance', href: '/seance' },
   { name: 'Témoignages', href: '/temoignages' },
 ];
 
 export default function Header() {
+  // ... Le reste de votre fichier Header reste identique ...
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -33,20 +35,18 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`font-medium transition-colors hover:text-[var(--primary)] ${
-                    isActive ? 'text-[var(--primary)] font-bold' : 'text-[var(--foreground)]'
-                  }`}
+                  className={`font-medium transition-colors hover:text-[var(--primary)] ${isActive ? 'text-[var(--primary)] font-bold' : 'text-[var(--foreground)]'
+                    }`}
                 >
                   {link.name}
                 </Link>
               );
             })}
-            <Link 
-                href="/contact" 
-                className={`font-bold py-2 px-4 rounded-lg transition-colors text-white ${
-                    pathname === '/contact'
-                    ? 'bg-[var(--primary)] ring-2 ring-offset-2 ring-[var(--accent)]'
-                    : 'bg-[var(--accent)] hover:bg-[var(--primary)]'
+            <Link
+              href="/contact"
+              className={`font-bold py-2 px-4 rounded-lg transition-colors text-white ${pathname === '/contact'
+                ? 'bg-[var(--primary)] ring-2 ring-offset-2 ring-[var(--accent)]'
+                : 'bg-[var(--accent)] hover:bg-[var(--primary)]'
                 }`}
             >
               Contact
@@ -69,28 +69,26 @@ export default function Header() {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block px-3 py-2 rounded-md text-base font-medium ${
-                        isActive ? 'bg-green-100 text-[var(--primary)] font-bold' : 'text-[var(--foreground)] hover:bg-gray-50'
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
-                );
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-green-100 text-[var(--primary)] font-bold' : 'text-[var(--foreground)] hover:bg-gray-50'
+                    }`}
+                >
+                  {link.name}
+                </Link>
+              );
             })}
             <Link
               href="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left mt-2 px-3 py-2 rounded-md text-base font-medium transition-colors text-white ${
-                pathname === '/contact'
-                  ? 'bg-[var(--primary)]'
-                  : 'bg-[var(--accent)] hover:bg-[var(--primary)]'
-              }`}
+              className={`block w-full text-left mt-2 px-3 py-2 rounded-md text-base font-medium transition-colors text-white ${pathname === '/contact'
+                ? 'bg-[var(--primary)]'
+                : 'bg-[var(--accent)] hover:bg-[var(--primary)]'
+                }`}
             >
               Contact
             </Link>
