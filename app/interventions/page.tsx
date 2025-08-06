@@ -48,14 +48,14 @@ export default function InterventionsPage() {
         </div>
       </div>
       <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold">Et aussi pour les animaux...</h3>
-          <p className="mt-4 text-lg max-w-2xl mx-auto">
-            J'ai aussi aidé des animaux et c'est un réel plaisir de le faire car ils prennent nos bien faits et savent nous le rendre.
-          </p>
+        <h3 className="text-2xl font-semibold">Et aussi pour les animaux...</h3>
+        <p className="mt-4 text-lg max-w-2xl mx-auto">
+          J'ai aussi aidé des animaux et c'est un réel plaisir de le faire car ils prennent nos bien faits et savent nous le rendre.
+        </p>
       </div>
       <div className="mt-16 text-center bg-red-100 border-l-4 border-red-500 text-red-700 p-6 max-w-3xl mx-auto rounded-md shadow">
-          <p className="font-bold text-xl">Avertissement important</p>
-          <p className="mt-2 text-lg">En aucun cas, je ne diagnostique ou ne remplace un traitement médical.</p>
+        <p className="font-bold text-xl">Avertissement important</p>
+        <p className="mt-2 text-lg">En aucun cas, je ne diagnostique ou ne remplace un traitement médical.</p>
       </div>
     </div>
   );

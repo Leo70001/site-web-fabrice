@@ -14,7 +14,7 @@ export default function FadeIn({ children, className }: FadeInProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
             className={className}
         >
             {children}

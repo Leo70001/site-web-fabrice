@@ -24,7 +24,7 @@ export default function MentionsLegalesPage() {
                     <br />
                     <strong>Fabrice LEMAITRE</strong>, exerçant en tant qu'entrepreneur individuel, domicilié(e) à Combles (80360), de nationalité française.
                     <br />
-                    N° SIRET : En cours d'immatriculation
+                    N° SIRET : 81772423000013
                     <br />
                     Adresse e-mail : [Email du client]
                     <br />
@@ -33,7 +33,7 @@ export default function MentionsLegalesPage() {
 
                 <h2>Hébergement</h2>
                 <p>
-                    Le Site est hébergé par la société [Nom de l'hébergeur (Vercel, Hostinger, etc.)].
+                    Le Site est hébergé par la société Vercel.
                     <br />
                     Adresse : [Adresse de l'hébergeur]
                     <br />
