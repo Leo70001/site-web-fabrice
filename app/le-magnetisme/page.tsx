@@ -1,6 +1,7 @@
 // src/app/le-magnetisme/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image"; // Import the Next.js Image component
 
 export const metadata: Metadata = {
     title: "Le Magnétisme & Coupeur de Feu - Fabrice Lemaitre",
@@ -77,24 +78,24 @@ export default function LeMagnetismePage() {
                     <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
                         <HandIcon />
                         <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--primary)]">
-                            Qu'est-ce que le Magnétisme ?
+                            Qu&apos;est-ce que le Magnétisme ?
                         </h2>
                         <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                             <p>
                                 Le magnétisme est une pratique ancestrale qui repose sur
-                                l'idée qu'un fluide énergétique circule en chacun de nous.
+                                l&apos;idée qu&apos;un fluide énergétique circule en chacun de nous.
                                 Parfois, des blocages, des fuites ou des déséquilibres dans
                                 cette circulation peuvent entraîner des douleurs physiques ou
                                 des troubles émotionnels.
                             </p>
                             <p>
-                                Le rôle du magnétiseur est d'utiliser sa propre énergie,
-                                transmise par l'imposition des mains, pour rééquilibrer et
+                                Le rôle du magnétiseur est d&apos;utiliser sa propre énergie,
+                                transmise par l&apos;imposition des mains, pour rééquilibrer et
                                 harmoniser le flux énergétique de la personne. Cela aide le
                                 corps à mobiliser ses propres capacités de guérison.
                             </p>
                             <p>
-                                Il aide à combattre le stress, l'anxiété, les problèmes de peau
+                                Il aide à combattre le stress, l&apos;anxiété, les problèmes de peau
                                 comme le psoriasis, ou encore les troubles du sommeil.
                             </p>
                             <p>
@@ -107,20 +108,25 @@ export default function LeMagnetismePage() {
 
                         {/* Galerie images Magnétisme */}
                         <div className="mt-8 grid grid-cols-3 gap-4">
-                            {/* Remplace les URLs ci-dessous par tes liens d'images */}
-                            <img
+                            <Image
                                 src="/images/magnetisme1.jpg"
                                 alt="Exemple de séance de magnétisme 1"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
-                            <img
+                            <Image
                                 src="/images/magnetisme2.jpg"
                                 alt="Exemple de séance de magnétisme 2"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
-                            <img
+                            <Image
                                 src="/images/magnetisme3.jpg"
                                 alt="Exemple de séance de magnétisme 3"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
                         </div>
@@ -130,11 +136,11 @@ export default function LeMagnetismePage() {
                     <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
                         <FireIcon />
                         <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--accent)]">
-                            Qu'est-ce qu'un Coupeur de Feu ?
+                            Qu&apos;est-ce qu&apos;un Coupeur de Feu ?
                         </h2>
                         <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                             <p>
-                                L'action de "couper le feu" est une application spécifique du
+                                L&apos;action de &quot;couper le feu&quot; est une application spécifique du
                                 magnétisme, particulièrement connue pour son efficacité sur les
                                 douleurs liées aux brûlures.
                             </p>
@@ -145,12 +151,12 @@ export default function LeMagnetismePage() {
                             </p>
                             <ul className="list-disc list-inside space-y-2">
                                 <li>Les brûlures domestiques et coups de soleil.</li>
-                                <li>Le "feu" du zona.</li>
+                                <li>Le &quot;feu&quot; du zona.</li>
                                 <li>Les effets secondaires des traitements de radiothérapie.</li>
                             </ul>
                             <p>
                                 Cette pratique offre un soulagement rapide et significatif de
-                                la douleur liée au "feu".
+                                la douleur liée au &quot;feu&quot;.
                             </p>
                             <p>
                                 <strong>
@@ -163,20 +169,25 @@ export default function LeMagnetismePage() {
 
                         {/* Galerie images Coupeur de Feu */}
                         <div className="mt-8 grid grid-cols-3 gap-4">
-                            {/* Remplace les URLs ci-dessous par tes liens d'images */}
-                            <img
+                            <Image
                                 src="/images/coupeurfeu1.jpg"
                                 alt="Exemple de coupeur de feu 1"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
-                            <img
+                            <Image
                                 src="/images/coupeurfeu2.jpg"
                                 alt="Exemple de coupeur de feu 2"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
-                            <img
+                            <Image
                                 src="/images/coupeurfeu3.jpg"
                                 alt="Exemple de coupeur de feu 3"
+                                width={128}
+                                height={96}
                                 className="rounded-lg object-cover w-full h-24"
                             />
                         </div>
