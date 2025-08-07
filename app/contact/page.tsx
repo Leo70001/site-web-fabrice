@@ -1,24 +1,31 @@
 // src/app/contact/page.tsx
 'use client';
+
+// Imports de React et des bibliothèques externes
+import { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { useState } from 'react';
+
+// Imports des composants Next.js
 import Image from 'next/image';
 
-// Schéma de validation
+// 1. Définition du schéma de validation avec Zod
 const validationSchema = z.object({
   prenom: z.string().min(1, { message: 'Le prénom est requis' }),
   nom: z.string().min(1, { message: 'Le nom est requis' }),
-  email: z.string().min(1, { message: 'L\'email est requis' }).email({ message: 'L\'email doit être valide' }),
+  email: z.string().min(1, { message: "L'email est requis" }).email({ message: "L'email doit être valide" }),
   telephone: z.string().optional(),
   message: z.string().min(5, { message: 'Le message doit contenir au moins 5 caractères' }),
 });
 
+// On déduit le type TypeScript du formulaire à partir du schéma Zod
 type ValidationSchema = z.infer<typeof validationSchema>;
 
 export default function ContactPage() {
   const [responseMessage, setResponseMessage] = useState('');
+
+  // 2. Initialisation du hook de formulaire avec Zod et le mode 'onBlur'
   const {
     register,
     handleSubmit,
@@ -29,8 +36,31 @@ export default function ContactPage() {
     mode: 'onBlur',
   });
 
+  // 3. Fonction de soumission qui envoie les données à l'API
   const onSubmit: SubmitHandler<ValidationSchema> = async (formData) => {
-    // ... (votre logique d'envoi d'email reste la même)
+    setResponseMessage('');
+
+    const dataToSend = {
+      name: `${formData.prenom} ${formData.nom}`,
+      email: formData.email,
+      phone: formData.telephone,
+      message: formData.message,
+    };
+
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(dataToSend),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      setResponseMessage('Merci ! Votre message a bien été envoyé.');
+      reset(); // Vider le formulaire après succès
+    } else {
+      setResponseMessage(data.message || 'Une erreur est survenue.');
+    }
   };
 
   return (
@@ -42,11 +72,10 @@ export default function ContactPage() {
       </div>
       <div className="mt-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
-        {/* Colonne de gauche : Carte de présentation + Infos pratiques */}
+        {/* --- COLONNE DE GAUCHE : INFOS --- */}
         <div className="space-y-10">
 
-          {/* NOUVELLE CARTE DE PRÉSENTATION AVEC L'IMAGE */}
-          <div className="bg-white  overflow-hidden ">
+          <div className="bg-[var(--color-card-background)] rounded-xl overflow-hidden ">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <div className="relative h-64 w-full">
                 <Image
@@ -59,12 +88,19 @@ export default function ContactPage() {
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-[var(--primary)]">Fabrice Lemaitre</h2>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">Magnétiseur & Coupeur de Feu</p>
-                <p className="mt-4 text-sm text-gray-500">Combles (80360), Hauts-de-France</p>
+                <a
+                  href="https://www.google.com/maps?q=28+bis+rue+de+Péronne+Combles+80360"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-sm text-gray-500 hover:underline"
+                >
+                  28 bis rue de Péronne Combles (803600), Hauts-de-France
+                </a>
+
               </div>
             </div>
           </div>
 
-          {/* Infos pratiques */}
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-[var(--primary)] mb-3">Horaires des rendez-vous</h3>
@@ -79,11 +115,23 @@ export default function ContactPage() {
                 Je suis joignable le soir après 17h au <strong className="whitespace-nowrap">06.43.61.82.80</strong>
               </p>
             </div>
+            <div>
+              <h3 className="text-2xl font-bold text-[var(--primary)] mb-3">Adresse du cabinet</h3>
+              <a
+                href="https://www.google.com/maps?q=28+bis+rue+de+Péronne+Combles+80360"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 text-sm text-gray-500 hover:underline"
+              >
+                28 bis rue de Péronne Combles (803600), Hauts-de-France
+              </a>
+
+            </div>
           </div>
         </div>
 
-        {/* Colonne de droite : Formulaire */}
-        <div className="bg-white p-8 rounded-lg shadow-lg ">
+        {/* --- COLONNE DE DROITE : FORMULAIRE --- */}
+        <div className="bg-[var(--color-card-background)] p-8 rounded-lg shadow-lg ">
           <h2 className="text-2xl font-bold text-[var(--primary)] mb-6">Envoyez-moi un message</h2>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -120,7 +168,7 @@ export default function ContactPage() {
             {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
           </form>
           <p className="mt-6 text-xs text-gray-500">
-            Conformément à la loi informatique et liberté...
+            Conformément à la loi informatique et liberté en date du 6 janvier 1978 vous disposez d'un droit d'accès, de rectification, de modification et de suppression de données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.
           </p>
         </div>
       </div>
