@@ -29,7 +29,7 @@ export default function Home() {
               Magnétiseur, coupeur de feu depuis 2014
             </p>
             <p className="mt-4 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-              "J’ai pour mission de vie de vous aider à diminuer ou vous débarrasser de vos douleurs physiques et émotionnelles."
+              &quot;J&apos;ai pour mission de vie de vous aider à diminuer ou vous débarrasser de vos douleurs physiques et émotionnelles.&quot;
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
@@ -56,11 +56,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6">Qui suis-je ?</h2>
             <p className="text-center text-lg leading-relaxed text-gray-800 dark:text-gray-300">
-              "Magnétiseur guérisseur, coupeur de feu à Combles (Somme), j’exerce uniquement au cabinet.
-              J’ai pris conscience de ce don en 1998 et je le mets en pratique depuis 2014."
+              &quot;Magnétiseur guérisseur, coupeur de feu à Combles (Somme), j&apos;exerce uniquement au cabinet.
+              J&apos;ai pris conscience de ce don en 1998 et je le mets en pratique depuis 2014.&quot;
             </p>
             <p className="text-center mt-4 italic text-gray-600 dark:text-gray-400">
-              "Ceux qui ont la chance de me connaître disent que c’est la maison du bonheur."
+              &quot;Ceux qui ont la chance de me connaître disent que c&apos;est la maison du bonheur.&quot;
             </p>
             <div className="text-center mt-6">
               <a

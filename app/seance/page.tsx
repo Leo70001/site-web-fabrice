@@ -51,7 +51,7 @@ export default function SeancePage() {
           {/* Politique d'annulation */}
           <article className="p-8 rounded-lg bg-yellow-50 border border-yellow-300">
             <h2 className="text-2xl font-semibold mb-4 text-yellow-800">
-              Politique d'annulation
+              Politique d&apos;annulation
             </h2>
             <p className="text-lg text-yellow-900">
               Toute séance programmée et non annulée entraînera un refus catégorique de recevoir à nouveau le patient.

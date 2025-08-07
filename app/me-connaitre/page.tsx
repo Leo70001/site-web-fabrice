@@ -33,12 +33,12 @@ export default function MeConnaitrePage() {
           <div className="md:col-span-2 space-y-6 text-lg leading-relaxed text-gray-800">
             <p>
               Je suis magnétiseur, guérisseur et coupeur de feu à Combles (Somme).
-              Âgé de 55 ans, j'exerce uniquement au cabinet.
+              Âgé de 55 ans, j&apos;exerce uniquement au cabinet.
             </p>
             <p>
-              J'ai pris conscience de ce don depuis 1998 et je le mets en pratique depuis
-              2014. En plus de ce don, j'ai suivi une formation à l'école du 3<sup>ème</sup> œil à Ville (60).
-              J'aime accompagner les personnes en fin de vie.
+              J&apos;ai pris conscience de ce don depuis 1998 et je le mets en pratique depuis
+              2014. En plus de ce don, j&apos;ai suivi une formation à l&apos;école du 3<sup>ème</sup> œil à Ville (60).
+              J&apos;aime accompagner les personnes en fin de vie.
             </p>
           </div>
         </section>
@@ -72,8 +72,8 @@ export default function MeConnaitrePage() {
         <section className="mt-16 text-center border-t border-gray-200 pt-12 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900">Ma mission de vie</h2>
           <p className="mt-4 text-lg text-gray-700">
-            J'ai pour mission de vous aider à diminuer ou vous débarrasser de vos douleurs
-            physiques et émotionnelles. Mon but est de faire le bien, d'aimer et d'être
+            J&apos;ai pour mission de vous aider à diminuer ou vous débarrasser de vos douleurs
+            physiques et émotionnelles. Mon but est de faire le bien, d&apos;aimer et d&apos;être
             dans la paix et la bienveillance.
           </p>
           <p className="mt-6 text-xl italic text-[var(--primary)]">

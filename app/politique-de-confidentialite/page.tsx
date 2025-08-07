@@ -17,23 +17,23 @@ export default function PolitiqueDeConfidentialitePage() {
 
                 <article>
                     <h3>ARTICLE 1 : PRÉAMBULE</h3>
-                    <p>La présente politique de confidentialité a pour but d'informer les utilisateurs du site :</p>
+                    <p>La présente politique de confidentialité a pour but d&apos;informer les utilisateurs du site :</p>
                     <ul>
                         <li>Sur la manière dont sont collectées et traitées leurs données à caractère personnel ;</li>
                         <li>Sur leurs droits concernant ces données ;</li>
-                        <li>Sur l'identité du responsable du traitement ;</li>
-                        <li>Sur l'utilisation des fichiers "cookies".</li>
+                        <li>Sur l&apos;identité du responsable du traitement ;</li>
+                        <li>Sur l&apos;utilisation des fichiers &quot;cookies&quot;.</li>
                     </ul>
                 </article>
 
                 <article>
                     <h3>ARTICLE 2 : PRINCIPES GÉNÉRAUX EN MATIÈRE DE COLLECTE ET DE TRAITEMENT DE DONNÉES</h3>
                     <p>
-                        Conformément à l'article 5 du Règlement européen 2016/679 (RGPD), la collecte et le traitement des données
+                        Conformément à l&apos;article 5 du Règlement européen 2016/679 (RGPD), la collecte et le traitement des données
                         respectent les principes suivants :
                     </p>
                     <ul>
-                        <li><strong>Licéité, loyauté et transparence :</strong> consentement de l'utilisateur requis.</li>
+                        <li><strong>Licéité, loyauté et transparence :</strong> consentement de l&apos;utilisateur requis.</li>
                         <li><strong>Finalités limitées :</strong> traitement pour des objectifs déterminés et légitimes.</li>
                         <li><strong>Minimisation :</strong> seules les données strictement nécessaires sont collectées.</li>
                         <li><strong>Intégrité et confidentialité :</strong> sécurité et confidentialité garanties.</li>
@@ -48,7 +48,7 @@ export default function PolitiqueDeConfidentialitePage() {
                         <li><strong>Formulaire de témoignage :</strong> nom, contenu du témoignage.</li>
                     </ul>
                     <p>
-                        Ces données sont collectées lors de l’envoi d’un formulaire par l’utilisateur. Elles sont conservées
+                        Ces données sont collectées lors de l&apos;envoi d&apos;un formulaire par l&apos;utilisateur. Elles sont conservées
                         uniquement pour la finalité du traitement, et dans le respect du cadre légal.
                     </p>
                 </article>
@@ -64,11 +64,11 @@ export default function PolitiqueDeConfidentialitePage() {
                 </article>
 
                 <article>
-                    <h3>ARTICLE 5 : DROITS DE L'UTILISATEUR</h3>
-                    <p>Conformément à la réglementation, l'utilisateur dispose des droits suivants :</p>
+                    <h3>ARTICLE 5 : DROITS DE L&apos;UTILISATEUR</h3>
+                    <p>Conformément à la réglementation, l&apos;utilisateur dispose des droits suivants :</p>
                     <ul>
-                        <li>Droit d'accès, de rectification et d'effacement ;</li>
-                        <li>Droit de limitation et d'opposition au traitement ;</li>
+                        <li>Droit d&apos;accès, de rectification et d&apos;effacement ;</li>
+                        <li>Droit de limitation et d&apos;opposition au traitement ;</li>
                         <li>Droit à la portabilité de ses données.</li>
                     </ul>
                     <p>
@@ -80,8 +80,8 @@ export default function PolitiqueDeConfidentialitePage() {
                 <article>
                     <h3>ARTICLE 6 : UTILISATION DES COOKIES</h3>
                     <p>
-                        Le site n’utilise que des cookies techniques, strictement nécessaires à son bon fonctionnement. Aucun
-                        cookie de suivi ou de mesure d’audience n’est utilisé sans consentement.
+                        Le site n&apos;utilise que des cookies techniques, strictement nécessaires à son bon fonctionnement. Aucun
+                        cookie de suivi ou de mesure d&apos;audience n&apos;est utilisé sans consentement.
                     </p>
                 </article>
 
@@ -91,7 +91,7 @@ export default function PolitiqueDeConfidentialitePage() {
                         La présente politique peut être modifiée à tout moment pour garantir sa conformité avec la loi en vigueur.
                         Les utilisateurs sont invités à la consulter régulièrement.
                     </p>
-                    <p>Dernière mise à jour : 30 juillet 2025.</p>
+                    <p>Dernière mise à jour : 7 août 2025.</p>
                 </article>
             </div>
         </div>

@@ -1,4 +1,3 @@
-// src/app/mentions-legales/page.tsx
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ export default function MentionsLegalesPage() {
 
                 <h2>Édition du site</h2>
                 <p>
-                    Le présent site, accessible à l'URL <strong>https://votresite.fr</strong>, est édité par :
+                    Le présent site, accessible à l&apos;URL <strong>https://votresite.fr</strong>, est édité par :
                 </p>
                 <address>
                     <strong>Fabrice LEMAITRE</strong>, entrepreneur individuel<br />
