@@ -14,7 +14,7 @@ import Image from 'next/image';
 const validationSchema = z.object({
   prenom: z.string().min(1, { message: 'Le prénom est requis' }),
   nom: z.string().min(1, { message: 'Le nom est requis' }),
-  email: z.string().min(1, { message: "L'email est requis" }).email({ message: "L'email doit être valide" }),
+  email: z.string().min(1, { message: "L&apos;email est requis" }).email({ message: "L&apos;email doit être valide" }),
   telephone: z.string().optional(),
   message: z.string().min(5, { message: 'Le message doit contenir au moins 5 caractères' }),
 });
@@ -67,7 +67,7 @@ export default function ContactPage() {
     <div className="container mx-auto px-4 py-16 sm:py-24">
       <div className="text-center">
         <h1 className="text-4xl font-bold tracking-tight text-[var(--primary)] sm:text-5xl">
-          Disponibilités & Contact
+          Disponibilités &amp; Contact
         </h1>
       </div>
       <div className="mt-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -87,7 +87,7 @@ export default function ContactPage() {
               </div>
               <div className="p-6">
                 <h2 className="text-2xl font-bold text-[var(--primary)]">Fabrice Lemaitre</h2>
-                <p className="mt-2 text-gray-600 dark:text-gray-400">Magnétiseur & Coupeur de Feu</p>
+                <p className="mt-2 text-gray-600 dark:text-gray-400">Magnétiseur &amp; Coupeur de Feu</p>
                 <a
                   href="https://www.google.com/maps?q=28+bis+rue+de+Péronne+Combles+80360"
                   target="_blank"
@@ -168,7 +168,7 @@ export default function ContactPage() {
             {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
           </form>
           <p className="mt-6 text-xs text-gray-500">
-            Conformément à la loi informatique et liberté en date du 6 janvier 1978 vous disposez d'un droit d'accès, de rectification, de modification et de suppression de données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.
+            Conformément à la loi informatique et liberté en date du 6 janvier 1978 vous disposez d&apos;un droit d&apos;accès, de rectification, de modification et de suppression de données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.
           </p>
         </div>
       </div>
