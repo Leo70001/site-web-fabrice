@@ -54,7 +54,7 @@ export default function SeancePage() {
               Politique d&apos;annulation
             </h2>
             <p className="text-lg text-yellow-900">
-              Toute séance programmée et non annulée entraînera un refus catégorique de recevoir à nouveau le patient en cas d'absence.
+              Toute séance programmée et non annulée entraînera un refus catégorique de recevoir à nouveau le patient en cas d’absence.
             </p>
           </article>
         </section>
