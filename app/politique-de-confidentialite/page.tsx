@@ -58,7 +58,7 @@ export default function PolitiqueDeConfidentialitePage() {
                     <p>
                         Le responsable du traitement des données est <strong>Fabrice LEMAITRE</strong>, joignable à :
                         <br />
-                        <a href="mailto:contact@votresite.fr">contact@votresite.fr</a>
+                        <a href="mailto:fabricelemaitremagnetiseur@gmail.com">fabricelemaitremagnetiseur@gmail.com</a>
                     </p>
                     <p>Il détermine les finalités et les moyens du traitement des données personnelles.</p>
                 </article>
@@ -73,7 +73,7 @@ export default function PolitiqueDeConfidentialitePage() {
                     </ul>
                     <p>
                         Ces droits peuvent être exercés par email à :
-                        <a href="mailto:contact@votresite.fr"> contact@votresite.fr</a>
+                        <a href="mailto:fabricelemaitremagnetiseur@gmail.com">fabricelemaitremagnetiseur@gmail.com</a>
                     </p>
                 </article>
 

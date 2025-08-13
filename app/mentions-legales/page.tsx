@@ -30,7 +30,7 @@ export default function MentionsLegalesPage() {
                     Domicilié à : 28 bis rue de Péronne, 80360 Combles, France<br />
                     N° SIRET : 817 724 230 00013<br />
                     Téléphone : <a href="tel:0643618280">06 43 61 82 80</a><br />
-                    Email : <a href="mailto:contact@votresite.fr">contact@votresite.fr</a>
+                    Email : <a href="mailto:fabricelemaitremagnetiseur@gmail.com">fabricelemaitremagnetiseur@gmail.com</a>
                 </address>
 
                 <h2>Hébergement</h2>
@@ -49,10 +49,10 @@ export default function MentionsLegalesPage() {
                     Le directeur de la publication est : <strong>Fabrice LEMAITRE</strong>
                 </p>
 
-                <h2>Nous contacter</h2>
+                <h2>Me contacter</h2>
                 <p>
                     Par téléphone : <a href="tel:0643618280">06 43 61 82 80</a><br />
-                    Par email : <a href="mailto:contact@votresite.fr">contact@votresite.fr</a>
+                    Par email : <a href="mailto:fabricelemaitremagnetiseur@gmail.com">fabricelemaitremagnetiseur@gmail.com</a>
                 </p>
             </div>
         </div>

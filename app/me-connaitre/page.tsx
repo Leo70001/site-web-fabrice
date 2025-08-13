@@ -45,7 +45,7 @@ export default function MeConnaitrePage() {
 
         {/* Galerie photos supplémentaires */}
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold text-center mb-8 text-gray-900">
+          <h2 className="text-2xl font-semibold text-center mb-8 text-[var(--accent)]">
             Un aperçu de mon univers
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -70,7 +70,7 @@ export default function MeConnaitrePage() {
 
         {/* Mission */}
         <section className="mt-16 text-center border-t border-gray-200 pt-12 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900">Ma mission de vie</h2>
+          <h2 className="text-3xl font-bold text-[var(--accent)]">Ma mission de vie</h2>
           <p className="mt-4 text-lg text-gray-700">
             J&apos;ai pour mission de vous aider à diminuer ou vous débarrasser de vos douleurs
             physiques et émotionnelles. Mon but est de faire le bien, d&apos;aimer et d&apos;être

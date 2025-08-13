@@ -54,7 +54,7 @@ export default function Home() {
       <FadeIn>
         <section className="py-20 bg-[var(--color-card-background)]">
           <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6">Qui suis-je ?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 text-[var(--accent)]">Qui suis-je ?</h2>
             <p className="text-center text-lg leading-relaxed text-gray-800 dark:text-gray-300">
               &quot;Magnétiseur guérisseur, coupeur de feu à Combles (Somme), j&apos;exerce uniquement au cabinet.
               J&apos;ai pris conscience de ce don en 1998 et je le mets en pratique depuis 2014.&quot;
@@ -78,7 +78,7 @@ export default function Home() {
       <FadeIn>
         <section className="py-20">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-[var(--accent)]">
               Domaines d’intervention
             </h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
