@@ -14,7 +14,7 @@ export async function POST(request: Request) {
 
         await resend.emails.send({
             from: 'contact@coupeur-de-feu-magnetiseur-fabrice-lemaitre.fr', // Pour le test. Remplacez par votre email de domaine vérifié en production.
-            to: 'fabricelemaitremagnetiseur@gmail.com.com', // Remplacez par l'adresse email de votre client
+            to: 'fabricelemaitremagnetiseur@gmail.com', // Remplacez par l'adresse email de votre client
             subject: `Nouveau message de ${name} via le site web`,
             html: `
         <h1>Nouveau message depuis le formulaire de contact</h1>
