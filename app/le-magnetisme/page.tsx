@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image"; // Import the Next.js Image component
+import SEO from "@/components/SEO";
+import { businessSchema } from "@/seoData";
 
 export const metadata: Metadata = {
     title: "Le Magnétisme & Coupeur de Feu - Fabrice Lemaitre",
@@ -57,159 +59,169 @@ const HandIcon = () => (
 
 export default function LeMagnetismePage() {
     return (
-        <div className="bg-gray-50">
-            {/* Section d'en-tête (Hero) */}
-            <div className="text-center py-20 sm:py-24 bg-white shadow-sm">
-                <div className="container mx-auto px-4 max-w-4xl">
-                    <h1 className="text-4xl sm:text-5xl font-bold text-[var(--primary)]">
-                        Le Magnétisme et le Don de Coupeur de Feu
-                    </h1>
-                    <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-                        Une approche complémentaire pour rééquilibrer vos énergies, apaiser
-                        vos douleurs et retrouver un bien-être.
-                    </p>
-                </div>
-            </div>
+        <>
+            <SEO
+                title="Le-magnetisme - Fabrice Lemaitre Magnétiseur"
+                description="Prenez rendez-vous avec Fabrice Lemaitre, magnétiseur et coupeur de feu à Combles."
+                keywords="contact magnétiseur Combles, rendez-vous magnétiseur Somme"
+                url="https://www.coupeur-de-feu-magnetiseur-fabrice-lemaitre.fr/le-magnetisme"
+                structuredData={businessSchema}
+            />
 
-            {/* Contenu principal de la page */}
-            <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
-                <div className="grid md:grid-cols-2 gap-12 items-start">
-                    {/* Carte pour le Magnétisme */}
-                    <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-                        <HandIcon />
-                        <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--primary)]">
-                            Qu&apos;est-ce que le Magnétisme ?
-                        </h2>
-                        <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                            <p>
-                                Le magnétisme est une pratique ancestrale qui repose sur
-                                l&apos;idée qu&apos;un fluide énergétique circule en chacun de nous.
-                                Parfois, des blocages, des fuites ou des déséquilibres dans
-                                cette circulation peuvent entraîner des douleurs physiques ou
-                                des troubles émotionnels.
-                            </p>
-                            <p>
-                                Le rôle du magnétiseur est d&apos;utiliser sa propre énergie,
-                                transmise par l&apos;imposition des mains, pour rééquilibrer et
-                                harmoniser le flux énergétique de la personne. Cela aide le
-                                corps à mobiliser ses propres capacités de guérison.
-                            </p>
-                            <p>
-                                Il aide à combattre le stress, l&apos;anxiété, les problèmes de peau
-                                comme le psoriasis, ou encore les troubles du sommeil.
-                            </p>
-                            <p>
-                                <strong>
-                                    Le magnétisme peut également renforcer la vitalité générale
-                                    et favoriser un état de relaxation profonde.
-                                </strong>
-                            </p>
-                        </div>
-
-                        {/* Galerie images Magnétisme */}
-                        <div className="mt-8 grid grid-cols-3 gap-4">
-                            <Image
-                                src="/images/magnetisme1.jpg"
-                                alt="Exemple de séance de magnétisme 1"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                            <Image
-                                src="/images/magnetisme2.jpg"
-                                alt="Exemple de séance de magnétisme 2"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                            <Image
-                                src="/images/magnetisme3.jpg"
-                                alt="Exemple de séance de magnétisme 3"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Carte pour Coupeur de Feu */}
-                    <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
-                        <FireIcon />
-                        <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--accent)]">
-                            Qu&apos;est-ce qu&apos;un Coupeur de Feu ?
-                        </h2>
-                        <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                            <p>
-                                L&apos;action de &quot;couper le feu&quot; est une application spécifique du
-                                magnétisme, particulièrement connue pour son efficacité sur les
-                                douleurs liées aux brûlures.
-                            </p>
-                            <p>
-                                Un coupeur de feu intervient pour apaiser la sensation de
-                                brûlure et aider à la cicatrisation. Cette pratique est souvent
-                                sollicitée pour :
-                            </p>
-                            <ul className="list-disc list-inside space-y-2">
-                                <li>Les brûlures domestiques et coups de soleil.</li>
-                                <li>Le &quot;feu&quot; du zona.</li>
-                                <li>Les effets secondaires des traitements de radiothérapie.</li>
-                            </ul>
-                            <p>
-                                Cette pratique offre un soulagement rapide et significatif de
-                                la douleur liée au &quot;feu&quot;.
-                            </p>
-                            <p>
-                                <strong>
-                                    Le coupeur de feu travaille également sur l’énergie autour de
-                                    la zone affectée, contribuant à accélérer le processus de
-                                    guérison.
-                                </strong>
-                            </p>
-                        </div>
-
-                        {/* Galerie images Coupeur de Feu */}
-                        <div className="mt-8 grid grid-cols-3 gap-4">
-                            <Image
-                                src="/images/coupeurfeu1.jpg"
-                                alt="Exemple de coupeur de feu 1"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                            <Image
-                                src="/images/coupeurfeu2.jpg"
-                                alt="Exemple de coupeur de feu 2"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                            <Image
-                                src="/images/coupeurfeu3.jpg"
-                                alt="Exemple de coupeur de feu 3"
-                                width={128}
-                                height={96}
-                                className="rounded-lg object-cover w-full h-24"
-                            />
-                        </div>
+            <div className="bg-gray-50">
+                {/* Section d'en-tête (Hero) */}
+                <div className="text-center py-20 sm:py-24 bg-white shadow-sm">
+                    <div className="container mx-auto px-4 max-w-4xl">
+                        <h1 className="text-4xl sm:text-5xl font-bold text-[var(--primary)]">
+                            Le Magnétisme et le Don de Coupeur de Feu
+                        </h1>
+                        <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                            Une approche complémentaire pour rééquilibrer vos énergies, apaiser
+                            vos douleurs et retrouver un bien-être.
+                        </p>
                     </div>
                 </div>
 
-                {/* Bloc d'avertissement et appel à l'action */}
-                <div className="mt-20 max-w-3xl mx-auto text-center bg-yellow-100 border-t-4 border-yellow-500 text-yellow-800 p-8 rounded-lg shadow-md">
-                    <h2 className="text-2xl font-bold">Important à savoir</h2>
-                    <p className="mt-4 text-lg">
-                        En aucun cas, le magnétiseur ne pose de diagnostic ou ne remplace un
-                        traitement médical prescrit par un médecin. Ces pratiques viennent
-                        en complément de la médecine traditionnelle.
-                    </p>
-                    <Link
-                        href="/contact"
-                        className="inline-block mt-6 bg-[var(--accent)] text-white font-bold py-3 px-6 rounded-lg hover:bg-[var(--primary)] transition-colors no-underline text-lg"
-                    >
-                        Prendre rendez-vous
-                    </Link>
+                {/* Contenu principal de la page */}
+                <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
+                    <div className="grid md:grid-cols-2 gap-12 items-start">
+                        {/* Carte pour le Magnétisme */}
+                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                            <HandIcon />
+                            <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--primary)]">
+                                Qu&apos;est-ce que le Magnétisme ?
+                            </h2>
+                            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                                <p>
+                                    Le magnétisme est une pratique ancestrale qui repose sur
+                                    l&apos;idée qu&apos;un fluide énergétique circule en chacun de nous.
+                                    Parfois, des blocages, des fuites ou des déséquilibres dans
+                                    cette circulation peuvent entraîner des douleurs physiques ou
+                                    des troubles émotionnels.
+                                </p>
+                                <p>
+                                    Le rôle du magnétiseur est d&apos;utiliser sa propre énergie,
+                                    transmise par l&apos;imposition des mains, pour rééquilibrer et
+                                    harmoniser le flux énergétique de la personne. Cela aide le
+                                    corps à mobiliser ses propres capacités de guérison.
+                                </p>
+                                <p>
+                                    Il aide à combattre le stress, l&apos;anxiété, les problèmes de peau
+                                    comme le psoriasis, ou encore les troubles du sommeil.
+                                </p>
+                                <p>
+                                    <strong>
+                                        Le magnétisme peut également renforcer la vitalité générale
+                                        et favoriser un état de relaxation profonde.
+                                    </strong>
+                                </p>
+                            </div>
+
+                            {/* Galerie images Magnétisme */}
+                            <div className="mt-8 grid grid-cols-3 gap-4">
+                                <Image
+                                    src="/images/magnetisme1.jpg"
+                                    alt="Exemple de séance de magnétisme 1"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                                <Image
+                                    src="/images/magnetisme2.jpg"
+                                    alt="Exemple de séance de magnétisme 2"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                                <Image
+                                    src="/images/magnetisme3.jpg"
+                                    alt="Exemple de séance de magnétisme 3"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Carte pour Coupeur de Feu */}
+                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                            <FireIcon />
+                            <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--accent)]">
+                                Qu&apos;est-ce qu&apos;un Coupeur de Feu ?
+                            </h2>
+                            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                                <p>
+                                    L&apos;action de &quot;couper le feu&quot; est une application spécifique du
+                                    magnétisme, particulièrement connue pour son efficacité sur les
+                                    douleurs liées aux brûlures.
+                                </p>
+                                <p>
+                                    Un coupeur de feu intervient pour apaiser la sensation de
+                                    brûlure et aider à la cicatrisation. Cette pratique est souvent
+                                    sollicitée pour :
+                                </p>
+                                <ul className="list-disc list-inside space-y-2">
+                                    <li>Les brûlures domestiques et coups de soleil.</li>
+                                    <li>Le &quot;feu&quot; du zona.</li>
+                                    <li>Les effets secondaires des traitements de radiothérapie.</li>
+                                </ul>
+                                <p>
+                                    Cette pratique offre un soulagement rapide et significatif de
+                                    la douleur liée au &quot;feu&quot;.
+                                </p>
+                                <p>
+                                    <strong>
+                                        Le coupeur de feu travaille également sur l’énergie autour de
+                                        la zone affectée, contribuant à accélérer le processus de
+                                        guérison.
+                                    </strong>
+                                </p>
+                            </div>
+
+                            {/* Galerie images Coupeur de Feu */}
+                            <div className="mt-8 grid grid-cols-3 gap-4">
+                                <Image
+                                    src="/images/coupeurfeu1.jpg"
+                                    alt="Exemple de coupeur de feu 1"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                                <Image
+                                    src="/images/coupeurfeu2.jpg"
+                                    alt="Exemple de coupeur de feu 2"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                                <Image
+                                    src="/images/coupeurfeu3.jpg"
+                                    alt="Exemple de coupeur de feu 3"
+                                    width={128}
+                                    height={96}
+                                    className="rounded-lg object-cover w-full h-24"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Bloc d'avertissement et appel à l'action */}
+                    <div className="mt-20 max-w-3xl mx-auto text-center bg-yellow-100 border-t-4 border-yellow-500 text-yellow-800 p-8 rounded-lg shadow-md">
+                        <h2 className="text-2xl font-bold">Important à savoir</h2>
+                        <p className="mt-4 text-lg">
+                            En aucun cas, le magnétiseur ne pose de diagnostic ou ne remplace un
+                            traitement médical prescrit par un médecin. Ces pratiques viennent
+                            en complément de la médecine traditionnelle.
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="inline-block mt-6 bg-[var(--accent)] text-white font-bold py-3 px-6 rounded-lg hover:bg-[var(--primary)] transition-colors no-underline text-lg"
+                        >
+                            Prendre rendez-vous
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
