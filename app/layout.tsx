@@ -15,6 +15,13 @@ export const metadata: Metadata = {
   description:
     "Fabrice Lemaitre, magnétiseur et coupeur de feu depuis 2014 à Combles (80360), vous aide à soulager vos douleurs physiques et émotionnelles.",
   viewport: "width=device-width, initial-scale=1.0",
+  other: {
+    "color-scheme": "light dark", // ✅ iOS Safari respecte clair/sombre
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
 };
 
 export default function RootLayout({
