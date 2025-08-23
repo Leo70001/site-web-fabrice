@@ -29,7 +29,7 @@ export default function InterventionsPage() {
           </p>
         </div>
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-[var(--magn_bg)] p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 text-[var(--accent)]">Couper le feu &amp; la peau</h3>
             <ul className="space-y-2 list-disc list-inside">
               <li>Brûlures domestiques</li>
@@ -39,7 +39,7 @@ export default function InterventionsPage() {
               <li>Psoriasis</li>
             </ul>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-[var(--magn_bg)] p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 text-[var(--accent)]">Douleurs &amp; Troubles</h3>
             <ul className="space-y-2 list-disc list-inside">
               <li>Douleurs neuropathiques</li>
@@ -49,7 +49,7 @@ export default function InterventionsPage() {
               <li>Évacuation des énergies négatives</li>
             </ul>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md">
+          <div className="bg-[var(--magn_bg)] p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 text-[var(--accent)]">États Émotionnels</h3>
             <ul className="space-y-2 list-disc list-inside">
               <li>Stress</li>
@@ -64,7 +64,7 @@ export default function InterventionsPage() {
             J&apos;ai aussi aidé des animaux et c&apos;est un réel plaisir de le faire car ils prennent nos bien faits et savent nous le rendre.
           </p>
         </div>
-        <div className="mt-16 text-center bg-red-100 border-l-4 border-red-500 text-red-700 p-6 max-w-3xl mx-auto rounded-md shadow">
+        <div className="mt-16 text-center bg-[var(--warning_bg)] border-l-4 border-[var(--warning_border)] text-[var(--warning_text)] p-6 max-w-3xl mx-auto rounded-md shadow">
           <p className="font-bold text-xl">Avertissement important</p>
           <p className="mt-2 text-lg">En aucun cas, je ne diagnostique ou ne remplace un traitement médical.</p>
         </div>

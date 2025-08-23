@@ -22,7 +22,7 @@ export default function MentionsLegalesPage() {
                 structuredData={businessSchema}
             />
 
-            <div className="bg-white py-16">
+            <div className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl prose prose-blue lg:prose-xl">
                     <h1>Mentions légales</h1>
 
@@ -35,7 +35,7 @@ export default function MentionsLegalesPage() {
 
                     <h2>Édition du site</h2>
                     <p>
-                        Le présent site, accessible à l&apos;URL <strong>https://votresite.fr</strong>, est édité par :
+                        Le présent site, accessible à l&apos;URL <strong>https://www.coupeur-de-feu-magnetiseur-fabrice-lemaitre.fr</strong>, est édité par :
                     </p>
                     <address>
                         <strong>Fabrice LEMAITRE</strong>, entrepreneur individuel<br />

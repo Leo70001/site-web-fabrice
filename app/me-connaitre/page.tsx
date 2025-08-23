@@ -21,7 +21,7 @@ export default function MeConnaitrePage() {
         structuredData={businessSchema}
       />
 
-      <div className="bg-white py-16 sm:py-24">
+      <div className=" py-16 sm:py-24 ">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           {/* Titre */}
           <header className="text-center">
@@ -42,7 +42,7 @@ export default function MeConnaitrePage() {
                 priority
               />
             </div>
-            <div className="md:col-span-2 space-y-6 text-lg leading-relaxed text-gray-800">
+            <div className="md:col-span-2 space-y-6 text-lg leading-relaxed">
               <p>
                 Je suis magnétiseur, guérisseur et coupeur de feu à Combles (Somme).
                 Âgé de 55 ans, j&apos;exerce uniquement au cabinet.
@@ -81,9 +81,9 @@ export default function MeConnaitrePage() {
           </section>
 
           {/* Mission */}
-          <section className="mt-16 text-center border-t border-gray-200 pt-12 max-w-3xl mx-auto">
+          <section className="mt-16 text-center border-t border-foreground pt-12 max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-[var(--accent)]">Ma mission de vie</h2>
-            <p className="mt-4 text-lg text-gray-700">
+            <p className="mt-4 text-lg ">
               J&apos;ai pour mission de vous aider à diminuer ou vous débarrasser de vos douleurs
               physiques et émotionnelles. Mon but est de faire le bien, d&apos;aimer et d&apos;être
               dans la paix et la bienveillance.

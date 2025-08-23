@@ -23,7 +23,7 @@ export default function PolitiqueDeConfidentialitePage() {
                 structuredData={businessSchema}
             />
 
-            <div className="bg-white py-16">
+            <div className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl prose lg:prose-xl">
                     <h1>Politique de confidentialité</h1>
 
@@ -103,7 +103,8 @@ export default function PolitiqueDeConfidentialitePage() {
                             La présente politique peut être modifiée à tout moment pour garantir sa conformité avec la loi en vigueur.
                             Les utilisateurs sont invités à la consulter régulièrement.
                         </p>
-                        <p>Dernière mise à jour : 22 août 2025.</p>
+                        <p>Date de mise en ligne : 19 août 2025.</p>
+                        <p>Dernière mise à jour : 23 août 2025.</p>
                     </article>
                 </div>
             </div>

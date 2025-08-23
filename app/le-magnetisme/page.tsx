@@ -68,14 +68,14 @@ export default function LeMagnetismePage() {
                 structuredData={businessSchema}
             />
 
-            <div className="bg-gray-50">
+            <div >
                 {/* Section d'en-tête (Hero) */}
-                <div className="text-center py-20 sm:py-24 bg-white shadow-sm">
+                <div className="text-center py-20 sm:py-24 shadow-sm">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <h1 className="text-4xl sm:text-5xl font-bold text-[var(--primary)]">
                             Le Magnétisme et le Don de Coupeur de Feu
                         </h1>
-                        <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="mt-4 text-xl max-w-3xl mx-auto">
                             Une approche complémentaire pour rééquilibrer vos énergies, apaiser
                             vos douleurs et retrouver un bien-être.
                         </p>
@@ -86,12 +86,12 @@ export default function LeMagnetismePage() {
                 <div className="container mx-auto px-4 py-16 sm:py-20 max-w-5xl">
                     <div className="grid md:grid-cols-2 gap-12 items-start">
                         {/* Carte pour le Magnétisme */}
-                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div className="p-8 rounded-xl shadow-lg bg-[var(--magn_bg)] border border-[var(--magn_card_border)]">
                             <HandIcon />
                             <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--primary)]">
                                 Qu&apos;est-ce que le Magnétisme ?
                             </h2>
-                            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                            <div className="space-y-4 text-lg  leading-relaxed">
                                 <p>
                                     Le magnétisme est une pratique ancestrale qui repose sur
                                     l&apos;idée qu&apos;un fluide énergétique circule en chacun de nous.
@@ -144,12 +144,12 @@ export default function LeMagnetismePage() {
                         </div>
 
                         {/* Carte pour Coupeur de Feu */}
-                        <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                        <div className="p-8 rounded-xl shadow-lg bg-[var(--magn_bg)] border border-[var(--magn_card_border)]">
                             <FireIcon />
                             <h2 className="text-3xl font-semibold text-center mt-4 mb-6 text-[var(--accent)]">
                                 Qu&apos;est-ce qu&apos;un Coupeur de Feu ?
                             </h2>
-                            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                            <div className="space-y-4 text-lg leading-relaxed">
                                 <p>
                                     L&apos;action de &quot;couper le feu&quot; est une application spécifique du
                                     magnétisme, particulièrement connue pour son efficacité sur les
@@ -206,7 +206,7 @@ export default function LeMagnetismePage() {
                     </div>
 
                     {/* Bloc d'avertissement et appel à l'action */}
-                    <div className="mt-20 max-w-3xl mx-auto text-center bg-yellow-100 border-t-4 border-yellow-500 text-yellow-800 p-8 rounded-lg shadow-md">
+                    <div className="mt-20 max-w-3xl mx-auto text-center bg-[var(--card_color)] border-t-4 border-[var(--card_border)] text-[var(--card_text)] p-8 rounded-lg shadow-md">
                         <h2 className="text-2xl font-bold">Important à savoir</h2>
                         <p className="mt-4 text-lg">
                             En aucun cas, le magnétiseur ne pose de diagnostic ou ne remplace un

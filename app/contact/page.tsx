@@ -88,7 +88,7 @@ export default function ContactPage() {
           {/* --- COLONNE DE GAUCHE : INFOS --- */}
           <div className="space-y-10">
 
-            <div className="bg-[var(--color-card-background)] rounded-xl overflow-hidden ">
+            <div className="bg-[var(--magn_bg)] rounded-xl overflow-hidden ">
               <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div className="relative h-64 w-full">
                   <Image
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     href="https://www.google.com/maps?q=28+bis+rue+de+Péronne+Combles+80360"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 text-sm text-gray-500 hover:underline"
+                    className="mt-4 text-sm hover:underline"
                   >
                     28 bis rue de Péronne Combles (803600), Hauts-de-France
                   </a>
@@ -134,7 +134,7 @@ export default function ContactPage() {
                   href="https://www.google.com/maps?q=28+bis+rue+de+Péronne+Combles+80360"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 text-sm text-gray-500 hover:underline"
+                  className="mt-4 text-sm hover:underline"
                 >
                   28 bis rue de Péronne Combles (803600), Hauts-de-France
                 </a>
@@ -144,33 +144,33 @@ export default function ContactPage() {
           </div>
 
           {/* --- COLONNE DE DROITE : FORMULAIRE --- */}
-          <div className="bg-[var(--color-card-background)] p-8 rounded-lg shadow-lg ">
+          <div className="bg-[var(--magn_bg)] p-8 rounded-lg shadow-lg ">
             <h2 className="text-2xl font-bold text-[var(--primary)] mb-6">Envoyez-moi un message</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="prenom" className="block text-sm font-medium">Prénom</label>
-                  <input type="text" id="prenom" {...register("prenom")} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
+                  <input type="text" id="prenom" {...register("prenom")} className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
                   {errors.prenom && <p className="text-red-500 text-sm mt-1">{errors.prenom.message}</p>}
                 </div>
                 <div>
                   <label htmlFor="nom" className="block text-sm font-medium">Nom</label>
-                  <input type="text" id="nom" {...register("nom")} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
+                  <input type="text" id="nom" {...register("nom")} className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
                   {errors.nom && <p className="text-red-500 text-sm mt-1">{errors.nom.message}</p>}
                 </div>
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium">Adresse email</label>
-                <input type="email" id="email" {...register("email")} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
+                <input type="email" id="email" {...register("email")} className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
               </div>
               <div>
                 <label htmlFor="telephone" className="block text-sm font-medium">Téléphone</label>
-                <input type="tel" id="telephone" {...register("telephone")} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
+                <input type="tel" id="telephone" {...register("telephone")} className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium">Message</label>
-                <textarea id="message" rows={5} {...register("message")} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]"></textarea>
+                <textarea id="message" rows={5} {...register("message")} className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)]"></textarea>
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
               </div>
               <div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
               </div>
               {responseMessage && <p className="text-center mt-4">{responseMessage}</p>}
             </form>
-            <p className="mt-6 text-xs text-gray-500">
+            <p className="mt-6 text-xs ">
               Conformément à la loi informatique et liberté en date du 6 janvier 1978 vous disposez d&apos;un droit d&apos;accès, de rectification, de modification et de suppression de données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.
             </p>
           </div>

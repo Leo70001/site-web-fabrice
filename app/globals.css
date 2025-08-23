@@ -2,21 +2,34 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #2D3748;
-  --primary: #2A6E58;
-  --accent: #2A6E58;
-  /* MODIFIÉ : Ancien #38A169 -> Nouveau #2A6E58 pour un meilleur contraste */
-}
+  --foreground: #354153;
+  --primary: #2a6e58;
+  --accent: #2a6e58;
+  --card_color: #FEF9C3;
+  --card_text: #8C5107;
+  --card_border: #F1B000;
+  --magn_card_border: #E6E7EB;
+  --magn_bg: #FFFFFF;
+  --warning_bg: #FFE2E2;
+  --warning_text: #c2000a;
+  --warning_border: #FB2C37;
+  --form_entry_border: #D1D5DD;
 
-/* La directive @theme n'est pas standard, elle a été retirée. 
-   Les variables dans :root remplissent ce rôle. */
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #48BB78;
-    --accent: #68D391;
+    --foreground: #a0acc1;
+    --card_color: #272200;
+    --card_text: #EFB36C;
+    --card_border: #8E5102;
+    --magn_card_border: #0a0a0a;
+    --magn_bg: #1F1F1F;
+    --warning_bg: #321415;
+    --warning_text: #d96970;
+    --warning_border: #DA0D16;
+    --form_entry_border: #4E525A;
   }
 }
 
@@ -24,5 +37,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  /* Note: Cette ligne surcharge la police optimisée par Next.js */
 }

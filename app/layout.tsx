@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -14,15 +14,11 @@ export const metadata: Metadata = {
   title: "Fabrice Lemaitre - Magnétiseur & Coupeur de Feu dans la Somme",
   description:
     "Fabrice Lemaitre, magnétiseur et coupeur de feu depuis 2014 à Combles (80360), vous aide à soulager vos douleurs physiques et émotionnelles.",
-  viewport: "width=device-width, initial-scale=1.0",
   other: {
-    "color-scheme": "light dark", // ✅ iOS Safari respecte clair/sombre
+    "color-scheme": "light dark", // ✅ ensures browsers know you support both
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
-  ],
 };
+
 
 export default function RootLayout({
   children,
@@ -31,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${lato.className} bg-gray-50 text-gray-800 flex flex-col min-h-screen`}>
+      {/* ✅ Use CSS variables instead of hardcoded Tailwind gray */}
+      <body
+        className={`${lato.className} bg-background text-foreground flex flex-col min-h-screen`}
+      >
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

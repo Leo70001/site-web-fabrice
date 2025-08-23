@@ -34,7 +34,7 @@ export default async function TemoignagesPage() {
           <h1 className="text-4xl font-bold tracking-tight text-[var(--primary)] sm:text-5xl">
             Témoignages
           </h1>
-          <p className="mt-4 text-lg text-gray-700">
+          <p className="mt-4 text-lg ">
             Les retours authentiques des personnes que j&apos;ai eu le plaisir d&apos;accompagner.
           </p>
         </header>
@@ -44,9 +44,9 @@ export default async function TemoignagesPage() {
             testimonials.map((testimonial) => (
               <article
                 key={testimonial._id}
-                className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[var(--accent)]"
+                className="bg-[var(--magn_bg)] p-6 rounded-lg shadow-md border-l-4 border-[var(--accent)]"
               >
-                <p className="text-lg italic text-gray-800">&quot;{testimonial.text}&quot;</p>
+                <p className="text-lg italic ">&quot;{testimonial.text}&quot;</p>
                 <p className="text-right font-bold mt-4 text-[var(--primary)]">— {testimonial.name}</p>
               </article>
             ))

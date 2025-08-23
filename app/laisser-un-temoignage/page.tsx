@@ -47,13 +47,13 @@ export default function SubmitTestimonialPage() {
 
             <form
                 onSubmit={handleSubmit}
-                className="mt-8 space-y-6 bg-white p-8 rounded-lg shadow-md border"
+                className="mt-8 space-y-6  p-8 rounded-lg shadow-md border border-[var(--magn_card_border)] bg-[var(--magn_bg)] "
                 noValidate
             >
                 <div>
                     <label
                         htmlFor="name"
-                        className="block font-medium text-gray-800"
+                        className="block font-medium "
                     >
                         Votre Prénom et l&apos;initiale de votre nom
                     </label>
@@ -63,7 +63,7 @@ export default function SubmitTestimonialPage() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
+                        className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
                         placeholder="Ex: Marie D."
                     />
                 </div>
@@ -71,7 +71,7 @@ export default function SubmitTestimonialPage() {
                 <div>
                     <label
                         htmlFor="text"
-                        className="block font-medium text-gray-800"
+                        className="block font-medium"
                     >
                         Votre témoignage
                     </label>
@@ -81,7 +81,7 @@ export default function SubmitTestimonialPage() {
                         onChange={(e) => setText(e.target.value)}
                         required
                         rows={6}
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
+                        className="mt-1 block w-full px-3 py-2 border border-[var(--form_entry_border)] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:border-[var(--accent)]"
                         placeholder="Décrivez votre expérience..."
                     />
                 </div>
